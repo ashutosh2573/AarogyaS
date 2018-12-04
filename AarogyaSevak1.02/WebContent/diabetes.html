@@ -1,0 +1,665 @@
+<html>
+<head>
+<title>AarogyaSevak</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<style>
+body {
+  margin: 0;
+font-family: "Times New Roman", Times, serif;
+}
+h2 {
+    background-color: #f1f1f1;
+  margin-top:0;
+    padding: 3px;
+    text-align: left;
+  position:fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 69px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+.active {slideshow-container
+    background-color: #4CAF50;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+font-family: "Times New Roman", Times, serif;
+font-size:20px;
+       
+}
+* {box-sizing: border-box;}
+body {font-family: "Times New Roman", Times, serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+button:hover {
+opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+padding: 14px 20px;
+background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+width: 100%;
+}
+}
+
+</style>
+</head>
+<body>
+
+<ul style="background-color:#4CAF50;">
+<li style="font-size:20px;"><a>AAROGYASEVAK</a></li>
+
+</ul>
+
+<ul>
+
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="diabetes.html">Diabetes</a></li>
+  <li><a href="Stress.html">Stress</a></li>
+  <li><a href="Malaria.html">Malaria</a></li>
+  <li><a href="Physiotherapy.html">Physiotherapy</a></li>
+  <li><a href="Thyroid.html">Thyroid</a></li>
+  <li><a href="Headache.html">Headache</a></li>
+</ul>
+<br/>
+
+<table height="300" width="90%" style="margin:20;margin-left:70px;">
+    <tr>
+      <td style="padding:40px;">
+        <h1 style="text-align:center;">Diabetes</h1>
+<p style="text-align:justify;">
+Diabetes, often referred to by doctors as diabetes mellitus, describes a group of metabolic diseases in which the person has high blood glucose (blood sugar), either because insulin production is inadequate, or because the body's cells do not respond properly to insulin, or both. Patients with high blood sugar will typically experience polyuria (frequent urination), they will become increasingly thirsty (polydipsia) and hungry (polyphagia).
+Over time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.
+Sometimes people call diabetes “a touch of sugar” or “borderline diabetes.” These terms suggest that someone doesn’t really have diabetes or has a less serious case, but every case of diabetes is serious.
+</p>
+
+
+
+      </td>
+      <td width=450><img src="d2.jpg" style="width:100%"></td>
+    </tr>
+  </table>
+<br/>
+<div class="container">
+ <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Allopathy</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+          
+<table height="300" width="100%" style="margin:0;">
+    <tr>
+      <td width="33%" style="text-align: justify;padding: 20px">Drugs used in diabetes treat diabetes mellitus by lowering the glucose level in the blood. With the exceptions of insulin, exenatide, liraglutide and pramlintide, all are administered orally and are thus also called oral hypoglycemic agents or oral antihyperglycemic agents. There are different classes of anti-diabetic drugs, and their selection depends on the nature of the diabetes, age and situation of the person, as well as other factors.</td>
+      <td>
+       
+<br/> 
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="margin-left: 79px; width: 39%;">Medications</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<div class="modal-header">
+<span class="close">&times;</span>
+</div>
+<div class="modal-body">
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+  <table height="300" width="90%" >
+    <tr>
+      <td width="20%" style="text-align: justify">
+        <ol>
+          <li> Metformin</li>
+          <br/><br/><br/><br/>
+          <li>Glucodol forte</li>
+          <br/><br/><br/><br/>
+          <li>Oezometv 2mg</li>
+
+</ol>
+
+      </td>
+      <td width="40%" style="text-align: justify";>
+        <ol>
+          <li>Metformin is an oral diabetes medicine that helps control blood sugar levels. Metformin used together with diet and exercise to improve blood sugar control in adults with type 2 diabetes mellitus.</li><br/><br/><br/><br/><br/>
+          <li>This medication contains sulfonylurea and biguanide antidiabetic combination, prescribed for type 2 diabetes.Glyburide raises insulin levels and helps tissues respond better to the insulin. Metformin lowers sugar and helps insulin work better.</li><br/><br/><br/><br/><br/><br/><br/><br/>
+          <li>Glimepiride is a medicine taken by mouth to help lower blood sugar. It belongs to a group of medicines called sulfonylureas. Glimepiride works by increasing the amount of insulin released from your pancreas</li></ol>
+
+      </td>
+      <td width="50%" style="text-align: justify; ">
+        <ol>
+          <li>https://pharmeasy.in/prescription-medicine/metformin-tab-11178">https://pharmeasy.in/prescription-medicine/metformin-tab-11178</a></li><br/><br/><br/><br/><br/><br/><br/>
+          <li>https://www.apollopharmacy.in/glucodol-forte-tablet.html">https://www.apollopharmacy.in/glucodol-forte-tablet.html</a></li><br/><br/><br/><br/><br/><br/>
+          <li>https://www.apollopharmacy.in/ozomet-vg-2mg-tablet.html</li>
+</ol>
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+</div>
+</form>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+
+      </td>
+      <td width="33%" style="text-align: center;">
+
+<img src="doc.png">
+
+
+        <br/>
+        Dr. A S Prakash
+
+<br/>Experience : 5 Years
+<br/>Apollo Spectra Hospitals Koramangala
+Bangalore
+<br/>MON-SAT | 09:30 AM-10:00 AM
+
+
+
+      </td>
+    </tr>
+  </table>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Homeopathy</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          
+<table height="300" width="100%" style="margin:0;">
+    <tr>
+      <td width="33%" style="text-align: justify;padding: 20px">Homeopathy is an alternative medical system. It’s also called homeopathic medicine. Homeopathy is based on the idea that a condition can be treated with a diluted amount of a natural substance that’s been shown to cause symptoms of the disease in healthy people. This is the homeopathic principle of “like cures like.”
+</td>
+      <td width="33%" style="text-align: justify;">
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn" style="margin-left: 79px; width: 39%;">Medications</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal" >
+
+<!-- Modal content -->
+<div class="modal-content">
+<div class="modal-header">
+<span class="close">&times;</span>
+</div>
+<div class="modal-body">
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+  <table height="300" width="90%" >
+    <tr>
+      <td width="20%" style="text-align: justify">
+        <ol>
+          <li> Metformin</li>
+          <br/><br/><br/><br/>
+          <li>Glucodol forte</li>
+          <br/><br/><br/><br/>
+          <li>Oezometv 2mg</li>
+
+</ol>
+
+      </td>
+      <td width="40%" style="text-align: justify";>
+        <ol>
+          <li>Metformin is an oral diabetes medicine that helps control blood sugar levels. Metformin used together with diet and exercise to improve blood sugar control in adults with type 2 diabetes mellitus.</li><br/><br/><br/><br/><br/>
+          <li>This medication contains sulfonylurea and biguanide antidiabetic combination, prescribed for type 2 diabetes.Glyburide raises insulin levels and helps tissues respond better to the insulin. Metformin lowers sugar and helps insulin work better.</li><br/><br/><br/><br/><br/><br/><br/><br/>
+          <li>Glimepiride is a medicine taken by mouth to help lower blood sugar. It belongs to a group of medicines called sulfonylureas. Glimepiride works by increasing the amount of insulin released from your pancreas</li></ol>
+
+      </td>
+      <td width="50%" style="text-align: justify; ">
+        <ol>
+          <li>https://pharmeasy.in/prescription-medicine/metformin-tab-11178">https://pharmeasy.in/prescription-medicine/metformin-tab-11178</a></li><br/><br/><br/><br/><br/><br/><br/>
+          <li>https://www.apollopharmacy.in/glucodol-forte-tablet.html">https://www.apollopharmacy.in/glucodol-forte-tablet.html</a></li><br/><br/><br/><br/><br/><br/>
+          <li>https://www.apollopharmacy.in/ozomet-vg-2mg-tablet.html</li>
+</ol>
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+</div>
+</form>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+
+
+</td>
+
+      <td width="33%" style="text-align: center;">
+
+<img src="doc.png">
+ <br/>
+
+Dr. Naveen A
+
+<br/>Experience : 25 Years
+<br/>Apollo Spectra Hospitals Koramangala
+Bangalore
+<br/>MON-SAT | 08:30 AM-9:30 9M
+
+      </td>
+    </tr>
+  </table>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Ayurveda</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+          
+
+<table height="300" width="100%" style="margin:0;">
+    <tr>
+      <td width="33%" style="text-align: justify;padding: 20px">Ayurvedic treatments for diabetes mellitus People with diabetes and other chronic diseases often use complementary and alternative medicines. This review examines the efficacy and safety of the use of various Ayurvedic treatments for diabetes mellitus. We found seven trials which included 354 participants (172 on treatment, 158 on control, 24 could not be classified). All these studies included adults with type 2 diabetes mellitus.
+      <td width="33%" style="text-align: justify;"></p>
+<p style="padding: 20px">Diabetes medications in Ayurveda are
+
+<ol>
+<li>Gymnema Sylvestre (Gurmar)</li>
+<li>Coccinia indica .</li>
+<br/>
+<li>Azadirachta Indica (Neem).</li>
+<br/>
+<li>Morus Indica (Mulberry).</li>
+<br/>
+<li>Momordica Charantia.</li>
+</ol>
+</p>
+      <td width="33%" style="text-align: center;">
+
+<img src="doc.png">
+ <br/>
+
+Dr. Bhuvaneswari
+
+<br/>Experience : 15 Years
+<br/>Apollo Spectra Hospitals Koramangala
+Bangalore
+<br/>MON-SAT | 08:30 AM-9:30 9M
+
+      </td>
+    </tr>
+  </table>
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Home Remedies</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+          
+<table height="300" width="100%" style="margin:0;">
+    <tr>
+      <td width="33%" style="text-align: justify;padding: 20px">Traditional medicine (also known as indigenous or folk medicine) comprises medical aspects of traditional knowledge that developed over generations within various societies before the era of modern medicine. The World Health Organization (WHO) defines traditional medicine as "the sum total of the knowledge, skills, and practices based on the theories, beliefs, and experiences indigenous to different cultures, whether explicable or not, used in the maintenance of health as well as in the prevention, diagnosis, improvement or treatment of physical and mental illness
+
+</td>
+      <td width="33%" style="text-align: justify;"></p>
+<p style="padding: 20px">Here are some easy ways to lower blood sugar levels naturally:
+<ol>
+<li>Exercise Regularly.</li>
+<br/>
+<li>Control Your Carb Intake.</li>
+<br/>
+<li>Increase Your Fiber Intake.</li>
+<br/>
+<li>Drink Water and Stay Hydrated.</li>
+<br/>
+<li>Implement Portion Control.</li>
+</ol>
+</p>
+</td>
+      <td width="33%" style="text-align: center;">
+
+<img src="hr1.jpg">
+ <br/>
+
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+
+
+
+<br/><br/><br/>
+<div class="footer">
+  <div style="font-size:20px;padding:1px;margin-left: 120px;"><p>Contact</p></div>
+  <div style="font-size:15px;margin-left: 170px;"><p>184 & 185, EPIP Zone, Whitefield,<br/> Bengaluru,<br/> Karnataka<br/> 560066<br/>Ph: 080818 80033<br/>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<br/>&copyCopy Righted
+</div>
+</p>
+</div>
+
+
+</body>
+</html>
